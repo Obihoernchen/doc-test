@@ -1,0 +1,20 @@
+site_name: Test documentation
+site_author: Community
+site_url: https://<gh-page-todo>
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.top
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+
+plugins:
+  - search
