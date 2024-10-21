@@ -1,12 +1,48 @@
 site_name: Test documentation
 site_author: Community
-site_url: https://<gh-page-todo>
+site_url: https://obihoernchen.github.io/doc-test/
+site_description: >-
+  This is a sample documentation
+
+repo_name: Obihoernchen/doc-test
+repo_url: https://github.com/Obihoernchen/doc-test
+edit_uri: edit/main/docs/
+
+copyright: Copyright &copy; Community
 
 theme:
   name: material
   features:
+    - content.action.edit
+    - content.action.view
+    - content.code.copy
     - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
     - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
 
 markdown_extensions:
   - admonition
